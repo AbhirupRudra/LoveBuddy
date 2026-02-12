@@ -53,8 +53,8 @@ Designed to be cute, expressive, and emotionally engaging.
 - **ESP32-C6**
 - **0.96" OLED Display (SSD1306, 128×64, I2C)**
 - **WS2812B 16-LED Ring**
-- **2 × TTP223 Touch Sensors**
-
+- **TTP223 Touch Sensors**
+- **DFPlayer Mini**
 ---
 
 ## 🔌 Pin Configuration
@@ -66,6 +66,9 @@ Designed to be cute, expressive, and emotionally engaging.
 | Touch Left   | GPIO 1       |
 | Touch Right  | GPIO 2       |
 | WS2812B DIN  | GPIO 18      |
+| RX DFPlayer  | GPIO 16      |
+| TX DFPlayer  | GPIO 17      |
+| Vibration Motor  | GPIO 19      |
 
 ---
 
@@ -76,27 +79,14 @@ Install via Arduino Library Manager:
 - Adafruit SSD1306
 - Adafruit GFX
 - Adafruit NeoPixel
-
----
-
-## 📂 Project Structure
-
-```
-
-LoveBuddy/
-│
-├── LoveBuddy.ino
-├── README.md
-└── images/
-
-```
+- DFRobotDFPlayerMini
 
 ---
 
 ## 🚀 Getting Started
 
 1. Clone this repository
-2. Open `LoveBuddy.ino` in Arduino IDE
+2. Open `LOVE_BOX_2.ino` in Arduino IDE
 3. Select **ESP32-C6** board
 4. Install required libraries
 5. Upload the code
@@ -118,25 +108,9 @@ This project focuses on:
 
 ## 🔮 Future Expansion Ideas
 
-- DFPlayer voice interaction
-- Vibration motor heartbeat feedback
 - WiFi + Web configuration panel
 - AI-based emotional learning
 - Remote interaction support
-
----
-
-## 📷 Demo (Add Your Media)
-
-Add demo GIFs or images inside `/images` folder:
-
-```
-
-/images/idle.gif
-/images/love-mode.gif
-/images/playful-mode.gif
-
-```
 
 ---
 
